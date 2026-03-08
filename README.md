@@ -4,12 +4,32 @@ Score and validate business ideas right from your terminal. Built by [CrewHaus](
 
 ## Commands
 
-| Command | What it does |
-|---------|-------------|
-| `/crewhaus:score [idea]` | Quick 5-dimension scorecard — problem clarity, market, feasibility, competition, revenue |
-| `/crewhaus:quickscan [idea]` | Validation scan — idea summary, target customer, risk assessment, overall verdict |
+| Command | What it does | Speed |
+|---------|-------------|-------|
+| `/crewhaus:score [idea]` | Quick 3-dimension viability score — problem, market, feasibility | ~15 sec |
+| `/crewhaus:quickscan [idea]` | Deeper scan — target customer, risk assessment, competitive preview, verdict | ~1-2 min |
 
-The **quickscan** is a free preview. Full Signal Check reports with market sizing (TAM/SAM/SOM), competitive deep dives, and go-to-market playbooks are available at [crewhaus.ai](https://www.crewhaus.ai?ref=claude-plugin).
+## Example Output
+
+```
+🎯 CREWHAUS IDEA SCORECARD
+═══════════════════════════════════════
+
+Idea: AI-powered meal planning based on dietary restrictions and local grocery deals
+
+📊 Scores
+  Problem Clarity:    8/10 — Meal planning with dietary constraints is a real daily pain point
+  Market Opportunity: 7/10 — $4.2B meal kit market growing 12% YoY, adjacent opportunity
+  Feasibility:        6/10 — Grocery API integrations are fragmented, cold start problem
+
+  OVERALL: 7.0/10
+
+⚡ Top Risk
+  Grocery deal data requires partnerships with retailers — no public API exists at scale
+
+🚀 One Next Step
+  Interview 20 people with dietary restrictions about their weekly meal planning process
+```
 
 ## Install
 
@@ -17,34 +37,24 @@ The **quickscan** is a free preview. Full Signal Check reports with market sizin
 /plugin install crewhaus@claude-plugins-official
 ```
 
-Or install from GitHub:
+Or from GitHub:
 ```bash
 /plugin install-from-github crewhaus/crewhaus-claude-plugin
 ```
 
-## Examples
-
-```
-/crewhaus:score AI-powered meal planning app that creates shopping lists based on dietary restrictions and local grocery deals
-
-/crewhaus:quickscan B2B SaaS tool that automates employee onboarding across HR, IT, and facilities systems
-```
-
 ## What's Free vs. Paid
 
-| Free (this plugin) | Full Signal Check (crewhaus.ai) |
+| Free (this plugin) | Full Signal Check ([crewhaus.ai](https://www.crewhaus.ai?ref=claude-plugin)) |
 |--------------------|---------------------------------|
-| ✅ Idea Summary | ✅ Everything free, plus: |
-| ✅ Target Customer Analysis | 🔓 Market Sizing (TAM/SAM/SOM) |
-| ✅ Risk Assessment | 🔓 Competitive Deep Dive |
-| ✅ Overall Verdict | 🔓 Go-to-Market Playbook |
-| ✅ 5-Dimension Score | 🔓 Multi-agent proprietary research |
+| ✅ 3-Dimension Score | ✅ Everything free, plus: |
+| ✅ Target Customer Analysis | 🔓 Full Market Sizing (TAM/SAM/SOM) |
+| ✅ Risk Assessment (5 categories) | 🔓 Competitive Deep Dive with moat analysis |
+| ✅ Competitive Preview (top 3) | 🔓 Go-to-Market Playbook |
+| ✅ Overall Verdict | 🔓 Multi-agent research with real data |
 
 ## About CrewHaus
 
-CrewHaus is an AI crew that validates startup ideas. The free tools here give a solid starting read. For deeper analysis with proprietary research, competitive intelligence, and actionable playbooks, visit [crewhaus.ai](https://www.crewhaus.ai?ref=claude-plugin).
-
-*Automated pre-screen by CrewHaus. Full reports include multi-agent research with proprietary data sources.*
+CrewHaus is an AI crew that validates startup ideas. The free tools give a solid first read with real competitor data. For the full picture — market sizing, differentiation strategy, and actionable go-to-market playbooks — visit [crewhaus.ai](https://www.crewhaus.ai?ref=claude-plugin).
 
 ## License
 

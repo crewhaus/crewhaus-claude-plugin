@@ -1,7 +1,7 @@
 {
   "name": "crewhaus",
-  "description": "Startup validation tools by CrewHaus. Score business ideas with a 5-dimension scorecard, run quick validation scans, and get actionable feedback — all from your terminal. Free scoring and scans, full reports at crewhaus.ai.",
-  "version": "1.1.0",
+  "description": "Score and validate startup ideas from your terminal. Quick 3-dimension viability scores, deeper scans with competitive preview and risk assessment. Free tools by CrewHaus.",
+  "version": "1.2.0",
   "author": {
     "name": "CrewHaus",
     "url": "https://www.crewhaus.ai"

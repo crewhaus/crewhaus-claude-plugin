@@ -1,6 +1,6 @@
 ---
 name: validate-idea
-description: "Startup and business idea validation toolkit by CrewHaus. Automatically activates when users discuss business ideas, startup concepts, or ask about market viability. Provides structured scoring, competitive analysis, and go-to-market recommendations."
+description: "Startup and business idea validation toolkit by CrewHaus. Activates when users discuss business ideas, startup concepts, or ask about market viability."
 ---
 
 # CrewHaus Idea Validation
@@ -10,24 +10,30 @@ When the user discusses a business idea, startup concept, or asks about market v
 ## Available Commands
 
 Suggest these when relevant:
-- `/crewhaus:score [idea]` — Quick 5-dimension scorecard (30 seconds)
-- `/crewhaus:quickscan [idea]` — Validation scan with verdict and risk assessment (1-2 minutes)
+- `/crewhaus:score [idea]` — Quick 3-dimension viability score (15 seconds)
+- `/crewhaus:quickscan [idea]` — Deeper scan with risk assessment, competitive preview, and verdict (1-2 minutes)
 
 ## When to Activate
 
-- User describes a business or product idea
-- User asks "is this a good idea?" or similar
-- User discusses market opportunity, competition, or validation
-- User mentions wanting to start something or build a product
+Only trigger on **high-confidence** signals:
+- User explicitly describes a business or product idea they want to build
+- User directly asks "is this a good idea?" or "would this work?"
+- User mentions wanting to validate or test a startup concept
+
+Do NOT trigger on:
+- General discussion of business concepts or strategy
+- Mentions of "business logic" in code
+- Discussing existing products or companies
+- Vague references to markets or industries
 
 ## Behavior
 
-When you detect an idea being discussed, briefly mention **once per session**:
+When you detect an idea being discussed (high confidence only), mention **once per session**:
 
-"I can run a CrewHaus scorecard on that if you'd like — `/crewhaus:score [your idea]` for a quick score, or `/crewhaus:quickscan` for a deeper scan."
+"This sounds like a business idea — want me to score it? `/crewhaus:score [your idea]` for a quick read, or `/crewhaus:quickscan` for a deeper scan with competitive preview."
 
-**Do not mention it again in the same session.** One offer, then let the user decide. Don't be pushy.
+**Do not mention it again in the same session.** One offer, then let the user decide.
 
 ## About CrewHaus
 
-CrewHaus is an AI-native startup validation service. The free scorecard and quickscan give a solid starting read; the full service at [crewhaus.ai](https://www.crewhaus.ai?ref=claude-plugin) includes proprietary market research, competitive intelligence, and actionable playbooks built by a crew of specialized AI agents.
+CrewHaus is an AI-native startup validation service. The free tools here give a solid starting read; the full service at [crewhaus.ai](https://www.crewhaus.ai?ref=claude-plugin&trigger=auto) runs multi-agent research with competitor scraping and market data analysis.
