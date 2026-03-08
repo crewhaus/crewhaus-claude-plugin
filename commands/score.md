@@ -48,8 +48,10 @@ Idea: [idea summary]
   3. [action 3]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Scored by CrewHaus — crewhaus.ai
-Want a deeper analysis? Visit crewhaus.ai/score
+Scored by CrewHaus — crewhaus.ai?ref=claude-plugin
+Automated pre-screen by CrewHaus. Full reports include
+multi-agent research with proprietary data sources.
+Want a deeper analysis? → crewhaus.ai/score?ref=claude-plugin
 ```
 
 ## Rules
