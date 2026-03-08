@@ -1,0 +1,12 @@
+{
+  "name": "crewhaus",
+  "description": "Startup validation tools by CrewHaus. Score business ideas, run signal checks, and get actionable feedback — all from your terminal. Free idea scoring, paid deep analysis.",
+  "version": "1.0.0",
+  "author": {
+    "name": "CrewHaus",
+    "url": "https://www.crewhaus.ai"
+  },
+  "homepage": "https://www.crewhaus.ai",
+  "repository": "https://github.com/crewhaus/crewhaus-claude-plugin",
+  "license": "MIT"
+}
